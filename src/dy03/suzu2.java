@@ -1,6 +1,7 @@
-package day03;
 
-public class 数组 {
+package dy03;
+
+public class suzu2 {
 
 
     private  static  char[] generate() {
@@ -11,11 +12,11 @@ public class 数组 {
         boolean[] flages = new boolean[letters.length];
         int index = 0;
         for (int i = 0; i < chs.length; i++) {
-do {
-    index = (int) (Math.random()*letters.length);
-}while(flages[index]);
-chs[i] = letters[index];
-flages[index] = true;
+            do {
+                index = (int) (Math.random()*letters.length);
+            }while(flages[index]);
+            chs[i] = letters[index];
+            flages[index] = true;
         }
 
         return chs;
